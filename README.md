@@ -19,3 +19,5 @@
 
 *istanbul cover ./node_modules/jasmine-node/bin/jasmine-node components/Test.spec.js --dir ./components/istanbul    
 
+*you can see the coverage report inside /client/components/istanbul/lcov-report/index.html
+
