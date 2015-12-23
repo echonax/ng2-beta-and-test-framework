@@ -1,0 +1,30 @@
+{
+  "name": "ekin-test",
+  "description": "Test",
+  "version": "0.1.1",
+  "homepage": "http://www.xalwin.com/",
+  "author": "Ekin Cam",
+  "private": true,
+  "dependencies": {
+    "body-parser": "^1.13.3",
+    "es6-module-loader": "^0.16",
+    "express": "^4.13.3",
+    "express-session": "^1.11.3",
+    "systemjs": "^0.19.2",
+    "traceur": "0.0.91"
+  },
+  "engines": {
+    "node": "> 0.10.1"
+  },
+  "scripts": {
+    "start": "node app.js"
+
+  },
+  "bundledDependencies": [
+    "express",
+    "socket.io"
+  ],
+  "devDependencies": {
+    "jasmine-core": "2.4.1"
+  }
+}

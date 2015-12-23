@@ -1,0 +1,70 @@
+In this documentation the writer will try to explain how to setup Jasmine for a test driven development ready architecture.
+
+-Download Jasmine CORE with the prompt below (It is assumed that you've already init'ed the npm and package.json)
+    npm install jasmine-core --save-dev --save-exact
+    npm install jasmine-node  --save-dev
+    C:\Users\user\Desktop\projects\AJS2\client>istanbul cover ./node_modules/jasmine
+    -node/bin/jasmine-node components/Test.spec.js
+
+***Be sure to install jasmine-core , not jasmine!
+***Be sure to install the lib in the same dir as the unit-test.html so you don't have to ../node_modules
+
+    -Create the unit-tests.html and import jasmine libs in <head>
+    -Import system.js for some import and export notations
+    -Configure system.js with default extensions and the testing classes
+    (-Prepare tsconfig.json (this is already done with angular2 project))
+    -Write your tests in the classes that you imported with system.js (Test.spec.ts)
+    -If you are going to referance other classes inside this spec, simply import them (actually this is the
+     reason we used system.js, to be able to use imports)
+***This architecture does not work in plain html, it requires cross domain stuff so it needs to be run on an app/web server; i.e: localhost:9999/unit-tests.html
+***import config.js or system.config after system.src.js to avoid routing problems
+
+<html>
+<head>
+
+    <title>Jasmine Tests</title>
+    <link rel="shortcut icon" type="image/png" href="node_modules/jasmine-core/images/jasmine_favicon.png">
+    <link rel="stylesheet" href="node_modules/jasmine-core/lib/jasmine-core/jasmine.css">
+    <!--JASMINE-->
+    <script src="node_modules/jasmine-core/lib/jasmine-core/jasmine.js"></script>
+    <script src="node_modules/jasmine-core/lib/jasmine-core/jasmine-html.js"></script>
+    <script src="node_modules/jasmine-core/lib/jasmine-core/boot.js"></script>
+    <!--TYPESCRIPT-->
+    <script src="node_modules/typescript/lib/typescript.js"></script>
+    <!--SYSTEMJS-->
+    <script src="node_modules/systemjs/dist/system.src.js"></script>
+
+
+
+
+</head>
+<body>
+<script>console.log("body starting");</script>
+<!-- System.js config before calling angular2 lib -->
+    <script>
+        System.config({
+            transpiler: 'typescript',
+            typescriptOptions: { emitDecoratorMetadata: true },
+            defaultJSExtensions: true
+        });
+    </script>
+
+<script src="node_modules/angular2/bundles/angular2.dev.js"></script>
+<script src="node_modules/angular2/bundles/testing.js"></script>
+    <script>
+        Promise.all([
+            System.import('components/ForMyTest.spec'),
+            System.import('components/Test.spec')
+                    .then(window.onload)
+                    .catch(console.error.bind(console))
+        ]);
+    </script>
+
+</body>
+</html>
+
+***/unit-tests.html for jasmine ui
+
+
+
+

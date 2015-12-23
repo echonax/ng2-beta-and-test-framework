@@ -1,0 +1,236 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <title>Code coverage report for components\Test.js</title>
+    <meta charset="utf-8" />
+    <link rel="stylesheet" href="../prettify.css" />
+    <link rel="stylesheet" href="../base.css" />
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <style type='text/css'>
+        .coverage-summary .sorter {
+            background-image: url(../sort-arrow-sprite.png);
+        }
+    </style>
+</head>
+<body>
+<div class='wrapper'>
+  <div class='pad1'>
+    <h1>
+      <a href="../index.html">all files</a> / <a href="index.html">components/</a> Test.js
+    </h1>
+    <div class='clearfix'>
+      <div class='fl pad1y space-right2'>
+        <span class="strong">65.79% </span>
+        <span class="quiet">Statements</span>
+        <span class='fraction'>25/38</span>
+      </div>
+      <div class='fl pad1y space-right2'>
+        <span class="strong">45.16% </span>
+        <span class="quiet">Branches</span>
+        <span class='fraction'>14/31</span>
+      </div>
+      <div class='fl pad1y space-right2'>
+        <span class="strong">71.43% </span>
+        <span class="quiet">Functions</span>
+        <span class='fraction'>5/7</span>
+      </div>
+      <div class='fl pad1y space-right2'>
+        <span class="strong">67.65% </span>
+        <span class="quiet">Lines</span>
+        <span class='fraction'>23/34</span>
+      </div>
+    </div>
+  </div>
+  <div class='status-line medium'></div>
+<pre><table class="coverage">
+<tr><td class="line-count quiet">1
+2
+3
+4
+5
+6
+7
+8
+9
+10
+11
+12
+13
+14
+15
+16
+17
+18
+19
+20
+21
+22
+23
+24
+25
+26
+27
+28
+29
+30
+31
+32
+33
+34
+35
+36
+37
+38
+39
+40
+41
+42
+43
+44
+45
+46
+47
+48
+49
+50
+51
+52
+53
+54
+55
+56
+57
+58</td><td class="line-coverage quiet"><span class="cline-any cline-yes">1×</span>
+<span class="cline-any cline-yes">1×</span>
+<span class="cline-any cline-yes">1×</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-yes">1×</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-yes">1×</span>
+<span class="cline-any cline-yes">1×</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-yes">1×</span>
+<span class="cline-any cline-yes">1×</span>
+<span class="cline-any cline-yes">1×</span>
+<span class="cline-any cline-yes">2×</span>
+<span class="cline-any cline-yes">2×</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-yes">1×</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-yes">1×</span>
+<span class="cline-any cline-yes">2×</span>
+<span class="cline-any cline-yes">2×</span>
+<span class="cline-any cline-yes">2×</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-yes">2×</span>
+<span class="cline-any cline-yes">2×</span>
+<span class="cline-any cline-yes">2×</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-yes">1×</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-yes">1×</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-yes">1×</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-yes">1×</span>
+<span class="cline-any cline-neutral">&nbsp;</span></td><td class="text"><pre class="prettyprint lang-js">var __decorate = (this &amp;&amp; this.__decorate) || function (decorators, target, key, desc) {
+    var c = arguments.length, r = c &lt; 3 ? target : <span class="branch-1 cbranch-no" title="branch not covered" >desc === null ? desc = Object.getOwnPropertyDescriptor(target, key) : desc,</span> d;
+    <span class="missing-if-branch" title="else path not taken" >E</span>if (typeof Reflect === "object" &amp;&amp; typeof Reflect.decorate === "function") r = Reflect.decorate(decorators, target, key, desc);
+    else <span class="cstat-no" title="statement not covered" >for (var i = decorators.length - 1; i &gt;= 0; i--) <span class="cstat-no" title="statement not covered" >if (d = decorators[i]) <span class="cstat-no" title="statement not covered" >r = (c &lt; 3 ? d(r) : c &gt; 3 ? d(target, key, r) : d(target, key)) || r;</span></span></span>
+    return c &gt; 3 &amp;&amp; <span class="branch-1 cbranch-no" title="branch not covered" >r </span>&amp;&amp; <span class="branch-2 cbranch-no" title="branch not covered" >Object.defineProperty(target, key, r),</span> r;
+};
+var __metadata = (this &amp;&amp; this.__metadata) || function (k, v) {
+    <span class="missing-if-branch" title="else path not taken" >E</span>if (typeof Reflect === "object" &amp;&amp; typeof Reflect.metadata === "function") return Reflect.metadata(k, v);
+};
+var angular2_1 = require('angular2/angular2');
+var Test = (function () {
+    function Test() {
+        console.log("Test class");
+        this.textarea = JSON.stringify({ "data": { "current": [{ "Info": { "name": "NetsureControllerv0.2", "weight": 29, "maxDepth": 6, "elementCountPerDepth": [1, 1, 1, 1, 1, 1, 1], "activeSince": "2014.06.0409: 28: 08" }, "Switches": [{ "dataPathId": "OpenFlow1.3ReferenceUserspaceSwitchDatapath", "hwAddress": "60: EB: 69: FE: C5: DA", "depth": 1, "ipv4Address": "192.196.197.218", "vendor": "StanfordUniversity, EricssonResearchandCPqDResearch", "activeSince": "2014.06.0409: 38: 39", "packets": 0, "bytes": 0, "flows": 0, "version": "1.3", "blocked": 0, "status": 0, "required": false, "colorCode": "B" }, { "dataPathId": "OpenFlow1.3ReferenceUserspaceSwitchDatapath", "hwAddress": "60: EB: 69: FE: C6: 75", "depth": 6, "ipv4Address": "192.196.can.orhan4", "vendor": "StanfordUniversity, EricssonResearchandCPqDResearch", "activeSince": "2014.06.0409: 38: 39", "packets": 0, "bytes": 0, "flows": 0, "version": "1.3", "blocked": 0, "status": 0, "required": false, "colorCode": "B" }, { "dataPathId": "OpenFlow1.3ReferenceUserspaceSwitchDatapath", "hwAddress": "60: EB: 69: FE: C6: 18", "depth": 4, "ipv4Address": "192.196.198.aydinabi", "vendor": "Stanford University, EricssonResearchandCPqDResearch", "activeSince": "2014.06.0409: 38: 39", "packets": 0, "bytes": 0, "flows": 0, "version": "1.3", "blocked": 0, "status": 0, "required": false, "colorCode": "B" }, { "dataPathId": "OpenFlow1.3ReferenceUserspaceSwitchDatapath", "hwAddress": "60: EB: 69: FE: C5: BB", "depth": 0, "ipv4Address": "192.196.197.aydinabi", "vendor": "StanfordUniversity, EricssonResearchandCPqDResearch", "activeSince": "2014.06.0409: 38: 39", "packets": 0, "bytes": 0, "flows": 0, "version": "1.3", "blocked": 0, "status": 0, "required": false, "colorCode": "B" }, { "dataPathId": "OpenFlow1.3ReferenceUserspaceSwitchDatapath", "hwAddress": "60: EB: 69: FE: C6: 56", "depth": 5, "ipv4Address": "192.196.198.86", "vendor": "StanfordUniversity,EricssonResearchandCPqDResearch", "activeSince": "2014.06.0409: 38: 39", "packets": 0, "bytes": 0, "flows": 0, "version": "1.3", "blocked": 0, "status": 0, "required": false, "colorCode": "B" }, { "dataPathId": "OpenFlow1.3ReferenceUserspaceSwitchDatapath", "hwAddress": "60: EB: 69: FE: C5: F9", "depth": 2, "ipv4Address": "192.196.197.249", "vendor": "StanfordUniversity, EricssonResearchandCPqDResearch", "activeSince": "2014.06.0409: 38: 39", "packets": 0, "bytes": 0, "flows": 0, "version": "1.3", "blocked": 0, "status": 0, "required": false, "colorCode": "B" }, { "dataPathId": "OpenFlow1.3ReferenceUserspaceSwitchDatapath", "hwAddress": "60: EB: 69: FE: C6: 37", "depth": 3, "ipv4Address": "192.196.198.55", "vendor": "StanfordUniversity, EricssonResearchandCPqDResearch", "activeSince": "2014.06.0409: 38: 39", "packets": 0, "bytes": 0, "flows": 0, "version": "1.3", "blocked": 0, "status": 0, "required": false, "colorCode": "B" }], "Links": [{ "srcHWAddress": "60: EB: 69: FE: C6: 56", "srcPortId": 2, "destHWAddress": "60: EB: 69: FE: C6: 75", "destPortId": 1, "blocked": 0, "status": 0, "required": false, "colorCode": "B" }, { "srcHWAddress": "60: EB: 69: FE: C5: BB", "srcPortId": 66, "destHWAddress": "60: EB: 69: FE: C5: BB", "destPortId": 188, "blocked": 0, "status": 0, "required": false, "colorCode": "B" }, { "srcHWAddress": "60: EB: 69: FE: C6: 56", "srcPortId": 2, "destHWAddress": "60: EB: 69: FE: C6: 56", "destPortId": 1, "blocked": 0, "status": 0, "required": false, "colorCode": "B" }, { "srcHWAddress": "60: EB: 69: FE: C6: 56", "srcPortId": 2, "destHWAddress": "60: EB: 69: FE: C6: 75", "destPortId": 1, "blocked": 0, "status": 0, "required": false, "colorCode": "B" }, { "srcHWAddress": "60: EB: 69: FE: C6: 56", "srcPortId": 2, "destHWAddress": "60: EB: 69: FE: C6: 75", "destPortId": 1, "blocked": 0, "status": 0, "required": false, "colorCode": "B" }, { "srcHWAddress": "60: EB: 69: FE: C6: 56", "srcPortId": 2, "destHWAddress": "60: EB: 69: FE: C6: 75", "destPortId": 1, "blocked": 0, "status": 0, "required": false, "colorCode": "B" }, { "srcHWAddress": "60: EB: 69: FE: C6: 18", "srcPortId": 1, "destHWAddress": "60: EB: 69: FE: C6: 37", "destPortId": 2, "blocked": 0, "status": 0, "required": false, "colorCode": "B" }, { "srcHWAddress": "60: EB: 69: FE: C6: 18", "srcPortId": 1, "destHWAddress": "60: EB: 69: FE: C5: F9", "destPortId": 7777, "blocked": 0, "status": 0, "required": false, "colorCode": "B" }, { "srcHWAddress": "60: EB: 69: FE: C6: 18", "srcPortId": 2, "destHWAddress": "60: EB: 69: FE: C6: 56", "destPortId": 1, "blocked": 0, "status": 0, "required": false, "colorCode": "B" }, { "srcHWAddress": "60: EB: 69: FE: C5: DA", "srcPortId": 2, "destHWAddress": "60: EB: 69: FE: C5: F9", "destPortId": 1, "blocked": 0, "status": 0, "required": false, "colorCode": "B" }, { "srcHWAddress": "60: EB: 69: FE: C5: F9", "srcPortId": 2, "destHWAddress": "60: EB: 69: FE: C6: 37", "destPortId": 1, "blocked": 0, "status": 0, "required": false, "colorCode": "B" }, { "srcHWAddress": "60: EB: 69: FE: C5: BB", "srcPortId": 1, "destHWAddress": "60: EB: 69: FE: C5: DA", "destPortId": 1, "blocked": 0, "status": 0, "required": false, "colorCode": "B" }], "Hosts": [{ "hostHWAddress": "00: 00: 00: 00: 00: 65", "hostIpv4Address": "192.168.0.101", "switchHWAddress": "60: EB: 69: FE: C5: F9", "switchPortNo": "1", "activeSince": "2014.02.1211: 07: 48", "displayName": "Unknown", "depth": 3, "status": 0, "required": false, "colorCode": "B" }, { "hostHWAddress": "00: 00: 00: 00: 00: 66", "hostIpv4Address": "192.168.0.102", "switchHWAddress": "60: EB: 69: FE: C5: F9", "switchPortNo": "2", "activeSince": "2014.02.1211: 07: 48", "displayName": "Unknown", "depth": 3, "status": 0, "required": false, "colorCode": "B" }, { "hostHWAddress": "00: 00: 00: 00: 00: 67", "hostIpv4Address": "192.168.0.103", "switchHWAddress": "60: EB: 69: FE: C5: F9", "switchPortNo": "1", "activeSince": "2014.02.1211: 07: 48", "displayName": "Unknown", "depth": 3, "status": 0, "required": false, "colorCode": "B" }, { "hostHWAddress": "00: 00: 00: 00: 00: 68", "hostIpv4Address": "192.168.0.104", "switchHWAddress": "60: EB: 69: FE: C5: F9", "switchPortNo": "3", "activeSince": "2014.02.1211: 07: 48", "displayName": "Unknown", "depth": 3, "status": 0, "required": false, "colorCode": "B" }, { "hostHWAddress": "00: 00: 00: 00: 00: 69", "hostIpv4Address": "192.168.0.105", "switchHWAddress": "60: EB: 69: FE: C5: F9", "switchPortNo": "4", "activeSince": "2014.02.1211: 07: 48", "displayName": "Unknown", "depth": 3, "status": 0, "required": false, "colorCode": "B" }, { "hostHWAddress": "00: 00: 00: 00: 00: 70", "hostIpv4Address": "192.168.0.106", "switchHWAddress": "60: EB: 69: FE: C5: F9", "switchPortNo": "2", "activeSince": "2014.02.1211: 07: 48", "displayName": "Unknown", "depth": 3, "status": 0, "required": false, "colorCode": "B" }, { "hostHWAddress": "00: 00: 00: 00: 00: 71", "hostIpv4Address": "192.168.0.107", "switchHWAddress": "60: EB: 69: FE: C5: F9", "switchPortNo": "1", "activeSince": "2014.02.1211: 07: 48", "displayName": "Unknown", "depth": 3, "status": 0, "required": false, "colorCode": "B" }, { "hostHWAddress": "00: 00: 00: 00: 00: 72", "hostIpv4Address": "192.168.0.108", "switchHWAddress": "60: EB: 69: FE: C5: F9", "switchPortNo": "3", "activeSince": "2014.02.1211: 07: 48", "displayName": "Unknown", "depth": 3, "status": 0, "required": false, "colorCode": "B" }, { "hostHWAddress": "00: 00: 00: 00: 00: 73", "hostIpv4Address": "192.168.0.109", "switchHWAddress": "60: EB: 69: FE: C5: DA", "switchPortNo": "1", "activeSince": "2014.02.1211: 07: 48", "displayName": "Unknown", "depth": 3, "status": 0, "required": false, "colorCode": "B" }, { "hostHWAddress": "00: 00: 00: 00: 00: 74", "hostIpv4Address": "192.168.0.110", "switchHWAddress": "60: EB: 69: FE: C6: 37", "switchPortNo": "3", "activeSince": "2014.02.1211: 07: 48", "displayName": "Unknown", "depth": 3, "status": 0, "required": false, "colorCode": "B" }] }], "track": {} } });
+    }
+    Test.prototype.onInit = <span class="fstat-no" title="function not covered" >function () {</span>
+    };
+    Test.prototype.validate = function (e) {
+        console.log("beautifying");
+        try {
+            var parsed = JSON.parse(e);
+<span class="cstat-no" title="statement not covered" >            var j = JSON.stringify(parsed, null, 4);</span>
+<span class="cstat-no" title="statement not covered" >            $('textarea').val('');</span>
+<span class="cstat-no" title="statement not covered" >            $('textarea').val(j);</span>
+<span class="cstat-no" title="statement not covered" >            this.resultClass = 'validJSON';</span>
+<span class="cstat-no" title="statement not covered" >            this.resultvalue = 'Valid!';</span>
+        }
+        catch (e) {
+            this.resultClass = 'notValidJSON';
+            this.resultvalue = 'Not a valid JSON \n' + e.message;
+            return false;
+        }
+<span class="cstat-no" title="statement not covered" >        return true;</span>
+    };
+    Test.prototype.submit = <span class="fstat-no" title="function not covered" >function (data) {</span>
+<span class="cstat-no" title="statement not covered" >        if (this.validate(data)) {</span>
+<span class="cstat-no" title="statement not covered" >            console.log("submitting..");</span>
+<span class="cstat-no" title="statement not covered" >            $.ajax({ method: 'PUT', url: '/testtopology', data: data, cache: false, timeout: 3000, contentType: 'text/plain' });</span>
+        }
+        else {
+<span class="cstat-no" title="statement not covered" >            console.log('error');</span>
+        }
+    };
+    Test = __decorate([
+        angular2_1.Component({
+            selector: 'test'
+        }),
+        angular2_1.View({
+            templateUrl: 'pagehtmls/test.html',
+            styleUrls: ['pagehtmls/test.css'],
+            directives: []
+        }), 
+        __metadata('design:paramtypes', [])
+    ], Test);
+    return Test;
+})();
+exports.Test = Test;
+//# sourceMappingURL=Test.js.map</pre></td></tr>
+</table></pre>
+<div class='push'></div><!-- for sticky footer -->
+</div><!-- /wrapper -->
+<div class='footer quiet pad2 space-top1 center small'>
+  Code coverage
+  generated by <a href="http://istanbul-js.org/" target="_blank">istanbul</a> at Mon Dec 14 2015 10:05:21 GMT+0200 (GTB Standard Time)
+</div>
+</div>
+<script src="../prettify.js"></script>
+<script>
+window.onload = function () {
+        if (typeof prettyPrint === 'function') {
+            prettyPrint();
+        }
+};
+</script>
+<script src="../sorter.js"></script>
+</body>
+</html>

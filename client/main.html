@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <title>Argela</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="">
+  <meta name="author" content="">
+  <link rel="icon" type="image/png" href="img/favi.png">
+
+  <!--BOOTSTRAP & JQUERY-->
+  <link href="libs/bootstrap/bootstrap.min.css" rel="stylesheet">
+  <link href="libs/bootstrap/bootstrap-theme.min.css" rel="stylesheet">
+  <link href="style.css" rel="stylesheet">
+  <script type="text/javascript" src="libs/jquery/jquery-2.1.4.min.js"></script>
+  <script type="text/javascript" src="libs/bootstrap/bootstrap.min.js"></script>
+
+  <!--DATATABLES--><!--
+  <link href="libs/datatable/jquery.dataTables_themeroller.css" rel="stylesheet">
+  <link href="libs/datatable/jquery.dataTables.min.css" rel="stylesheet">
+  <script type="text/javascript" src="libs/datatable/jquery.dataTables.min.js"></script>-->
+  <!--JASNY OFFMENU-->
+  <link href="libs/jasny/jasny-bootstrap.min.css" rel="stylesheet">
+  <script type="text/javascript" src="libs/jasny/jasny-bootstrap.min.js"></script>
+  <!--D3-->
+  <script src="libs/d3/d3.min.js"></script>
+  <link rel="stylesheet" type="text/css" href="libs/d3/d3tip.css">
+  <script src="libs/d3/d3.tip.v0.6.3.js"></script>
+  <!--ANGULAR-->
+  <script src="node_modules/typescript/lib/typescript.js"></script>
+
+  <script src="node_modules/angular2/bundles/angular2-polyfills.js"></script>
+  <script src="node_modules/systemjs/dist/system.src.js"></script>
+  <script src="config.js"></script>
+  <script src="node_modules/rxjs/bundles/Rx.js"></script>
+  <script src="node_modules/angular2/bundles/angular2.dev.js"></script>
+  <script src="node_modules/angular2/bundles/router.dev.js"></script>
+  <!--SOCKET-->
+  <script src="/socket.io/socket.io.js"></script>
+  <!--SWEETALERT-->
+  <script src="libs/sweetalert/sweetalert.min.js"></script>
+  <link rel="stylesheet" type="text/css" href="libs/sweetalert/sweetalert.css">
+  <script src="libs/bootbox/bootbox.min.js"></script>
+  <!--ANGULAR ROUTING for router paths-->
+  <base href="/">
+</head>
+<body>
+
+
+
+<RootComponent></RootComponent>
+
+<script>
+
+  System.import('RootComponent')
+          .then(null, console.error.bind(console));
+</script>
+
+</body>
+
+</html>

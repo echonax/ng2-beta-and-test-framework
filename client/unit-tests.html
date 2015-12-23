@@ -1,0 +1,43 @@
+<html>
+<head>
+
+    <title>Jasmine Tests</title>
+    <link rel="shortcut icon" type="image/png" href="node_modules/jasmine-core/images/jasmine_favicon.png">
+    <link rel="stylesheet" href="node_modules/jasmine-core/lib/jasmine-core/jasmine.css">
+    <!--JASMINE-->
+    <script src="node_modules/jasmine-core/lib/jasmine-core/jasmine.js"></script>
+    <script src="node_modules/jasmine-core/lib/jasmine-core/jasmine-html.js"></script>
+    <script src="node_modules/jasmine-core/lib/jasmine-core/boot.js"></script>
+    <!--TYPESCRIPT-->
+    <script src="node_modules/typescript/lib/typescript.js"></script>
+    <!--SYSTEMJS-->
+    <script src="node_modules/systemjs/dist/system.src.js"></script>
+
+
+
+
+</head>
+<body>
+<script>console.log("body starting");</script>
+<!-- System.js config before calling angular2 lib -->
+    <script>
+        System.config({
+            transpiler: 'typescript',
+            typescriptOptions: { emitDecoratorMetadata: true },
+            defaultJSExtensions: true
+        });
+    </script>
+
+<script src="node_modules/angular2/bundles/angular2.dev.js"></script>
+<script src="node_modules/angular2/bundles/testing.js"></script>
+    <script>
+        Promise.all([
+            System.import('components/ForMyTest.spec'),
+            System.import('components/Test.spec')
+                    .then(window.onload)
+                    .catch(console.error.bind(console))
+        ]);
+    </script>
+
+</body>
+</html>

@@ -1,0 +1,10 @@
+.validJSON{
+    background: #E6EFC2;
+    color: #529214;
+    border-color: #C6D880;
+}
+.notValidJSON{
+    background: #FBE3E4;
+    color: #D12F19;
+    border-color: #FBC2C4;
+}

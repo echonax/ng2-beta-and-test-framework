@@ -1,0 +1,9 @@
+<!--<div>user home: {{id}}</div>-->
+<div style="text-align:center">
+<textarea #json rows="30" cols="150">{{textarea}}</textarea>
+    <div>
+        <button type="submit"  (click)="validate(json.value)">Validate & Indent</button>
+        <button type="submit"  (click)="submit(json.value)">Submit</button>
+    </div>
+    <div id="resultcontainer"><pre id="result" class="{{resultClass}}">{{resultvalue}}</pre></div>
+</div>

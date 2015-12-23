@@ -1,0 +1,220 @@
+.floatL{
+	float:left;
+}
+.floatR{
+	float:right;
+}
+
+
+html svg .node text {
+	stroke: black;
+}
+
+html a {
+	cursor: pointer;
+}
+
+div.topotooltip {
+	bottom: 0px;
+	position: fixed;
+	text-align: left;
+	width: 100%;
+	height: 2em;
+	padding: 4px;
+	font: 14px sans-serif;
+	background: #ddd;
+	border: solid 1px #aaa;
+	border-radius: 4px;
+	pointer-events: none;
+}
+
+div.topotooltip .tool-head {
+	text-align: center;
+	font-size: 1em;
+	margin-bottom: 2em;
+	font-weight: bold;
+}
+
+div.topotooltip .tool-info-head {
+	color: steelblue;
+	margin-right: 5px;
+	font-weight: bold;
+}
+
+.actionStatus {
+	margin-top: 24px;
+}
+
+.blueText {
+	color: blue;
+}
+
+.greenText {
+	color: green;
+}
+
+.redText {
+	color: red;
+}
+
+.yellowText {
+	color: #926E02;
+}
+
+.node {
+	cursor: pointer;
+	stroke: #3182bd;
+}
+
+.link {
+	fill: none;
+}
+
+.path-link {
+	fill: none;
+	stroke: #9ecae1;
+
+	/*stroke-dasharray: 78, 2 !important;*/
+	/*animation: flow 6s linear infinite !important;*/
+	/*-webkit-animation: flow 6s linear infinite !important;*/
+}
+/*@keyframes flow {*/
+	/*from {stroke-dashoffset: 80;}*/
+	/*to {stroke-dashoffset: 0;}*/
+/*}*/
+
+/*@-webkit-keyframes flow {*/
+	/*from {stroke-dashoffset: 80;}*/
+	/*to {stroke-dashoffset: 0;}*/
+/*}*/
+
+.tab {
+	position: absolute;
+	left: 10em;
+}
+
+#port {
+	margin-left: 3em;
+}
+
+
+.main-nav .active-link:after {
+	content: "";
+	position: absolute;
+	top: 100%;
+	left: 50%;
+	z-index: 1000;
+	border-top: 8px solid #ccc;
+	border-left: 8px solid transparent;
+	border-right: 8px solid transparent;
+	margin-left: -8px;
+}
+
+.main-nav a {
+	z-index: 900;
+	display: inline-block;
+	position: relative;
+	color: #444;
+	font-weight: 500;
+	font-style: normal;
+	font-size: 1rem;
+	text-transform: uppercase;
+	border-right: 1px solid lightgray;
+	border-bottom: 1px solid lightgray;
+	padding: 0.7em 1em 0.7em 1em;
+	margin: 0;
+}
+
+.main-nav a span:hover {
+	cursor: pointer;
+}
+.A{
+	stroke:red !important;
+	/*image: images/switchTestAqua48x32.svg;*/
+}
+
+.B {
+	stroke:blue !important;
+}
+.C{
+	stroke:green !important;
+}
+.D{
+	stroke:gold !important;
+}
+.E{
+	stroke:purple !important;
+	stroke-width: 6px !important;
+	/* radius */
+	width: 8px !important;
+
+}
+#contextmenu-node {
+	position: absolute;
+	background-color: white;
+	border: solid #CCCCCC 1px;
+}
+
+#contextmenu-node .contextmenu-item {
+	margin: 0.5em;
+	padding-left: 0.5em;
+	list-style: none;
+	margin-left: -35px;
+	font-size: 130%;
+}
+
+#contextmenu-node .contextmenu-item:hover {
+	background-color: #CCCCCC;
+	cursor: pointer;
+}
+
+button.close {
+	-webkit-appearance: none;
+	padding: 0;
+	cursor: pointer;
+	background: 0 0;
+	border: 0;
+	margin-top: -0.5em;
+	z-index: 1000;
+}
+
+.close {
+	position: absolute;
+	top: 0.5em;
+	right: 0.1em;
+	font-size: 17px;
+	font-weight: 700;
+	line-height: 1;
+	color: #000;
+	text-shadow: 0 1px 0 #fff;
+	filter: alpha(opacity = 20);
+	opacity: .2;
+}
+
+/*latest*/
+
+.navbar{
+	border:0px !important;
+}
+.navbar-default{
+	border-radius: 0 !important;
+	background-image: linear-gradient(to bottom,#0273D4 0,#f8f8f8 100%) !important;
+}
+.navbar-default .navbar-nav>.active>a, .navbar-default .navbar-nav>.open>a {
+	background-image: linear-gradient(to bottom, #0273D4 0, #e2e2e2 100%);
+}
+.navbar-default .navbar-nav>li>a{
+	color: darkblue;
+}
+
+.blurred.link {
+	opacity: 0.25;
+
+}
+
+.flowline {
+
+}
+.textpath{
+	stroke:black;
+}
