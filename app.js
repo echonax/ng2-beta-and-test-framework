@@ -5,7 +5,7 @@ var session = require('express-session');
 var bodyParser = require('body-parser');
 
 
-var mysql = require('mysql');
+//var mysql = require('mysql');
 
 var io = require('socket.io')(server,{log:false});
 
