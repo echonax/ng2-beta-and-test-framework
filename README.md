@@ -3,9 +3,9 @@
 *install node package manager   (http://blog.npmjs.org/post/85484771375/how-to-install-npm)  
 
 *run the ```npm install``` command in root dir    
-*run the "npm install" command in /client dir so that package.json can download the necessary dependencies 
+*run the ```npm install``` command in /client dir so that package.json can download the necessary dependencies 
 
-*in root dir run "node app.js" and voila! you have a ui framework that is made with angular 2 beta    
+*in root dir run ```node app.js``` and voila! you have a ui framework that is made with angular 2 beta    
 
 
 *you can write your components inside /client/components and there are 2 test class examples already inside    
@@ -18,7 +18,7 @@
 
 *then run the below command inside /client    
 
-*istanbul cover ./node_modules/jasmine-node/bin/jasmine-node components/Test.spec.js --dir ./components/istanbul    
+```istanbul cover ./node_modules/jasmine-node/bin/jasmine-node components/Test.spec.js --dir ./components/istanbul```   
 
 *you can see the coverage report inside /client/components/istanbul/lcov-report/index.html
 
