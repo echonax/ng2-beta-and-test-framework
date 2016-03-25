@@ -14,33 +14,6 @@ var currentTopoString = "";
     io.on('disconnect', function(socket){
         console.log("client dcd");
     });
-
-    app.post('/topology', function(req,res){
-        console.log("new topology arrived to the server");
-        currentTopo = req.body;
-        io.emit('topology',currentTopo);
-        return res.sendStatus(200);
-    });
-
-    app.get('/getTopology', function(req,res){
-        console.log("topology get requested");
-        io.emit('topology',currentTopo);
-        return res.sendStatus(200);
-    });
-
-    app.put('/testtopology', function(req,res){
-        currentTopoString = "";
-        req.on("data",function(d){
-            currentTopoString += d;
-        });
-        req.on("end",function(d){
-            var currentTopoJSON = JSON.parse(currentTopoString);
-            console.log("turning into JSON");
-            currentTopo = currentTopoJSON;
-            return res.sendStatus(200);
-        });
-
-    });
     
 
     app.post('/login', function(req, res) {
