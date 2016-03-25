@@ -5,7 +5,9 @@
 *run the ```npm install``` command in root dir    
 *run the ```npm install``` command in /client dir so that package.json can download the necessary dependencies 
 
-*in root dir run ```node app.js``` and voila! you have a ui framework that is made with angular 2 beta    
+*in root dir run ```node app.js``` and voila! you have a ui framework that is made with angular 2 beta  
+
+username/pass = admin
 
 
 *you can write your components inside /client/components and there are 2 test class examples already inside    
